@@ -358,12 +358,16 @@ class ViewController: UIViewController {
                         surnames: \(result.surnames)
                         givenNames: \(result.givenNames)
                         documentNumber: \(result.documentNumber ?? "-")
+                        documentNumberCheckDigit: \(result.documentNumberCheckDigit ?? "-")
                         nationalityCountryCode: \(result.nationalityCountryCode)
                         birthdate: \(birthdateString ?? "-")
                         sex: \(result.sex)
                         expiryDate: \(expiryDateString ?? "-")
                         personalNumber: \(result.optionalData ?? "-")
                         personalNumber2: \(result.optionalData2 ?? "-")
+                        mrzCode: \(result.mrzString)"
+                        mrzDigit: \(result.mrzStringWithFinalDigit)
+                        finalDigit: \(result.finalCheckDigit ?? "-")
                         """
 
         let alertController = UIAlertController(
