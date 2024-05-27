@@ -8,6 +8,8 @@
 import MRZParser
 
 public struct MRZValidator: Validator {
+    public init() { }
+    
     public func getValidatedResults(from possibleLines: [[String]]) -> ValidatedResults {
         var validLines = ValidatedResults()
 
