@@ -20,31 +20,45 @@ struct StubModels {
     static let firstParsedResult = ParsedResult(
         format: .td3,
         documentType: .passport,
+        documentTypeAdditional: nil, 
         countryCode: "UTO",
         surnames: "ERIKSSON",
         givenNames: "ANNA MARIA",
         documentNumber: "L898902C3",
+        documentNumberCheckDigit: nil, 
         nationalityCountryCode: "UTO",
         birthdate:  dateFormatter.date(from: "740812")!,
+        birthdateCheckDigit: nil, 
         sex: .female,
         expiryDate: dateFormatter.date(from: "120415")!,
+        expiryDateCheckDigit: nil, 
         optionalData: "ZE184226B",
-        optionalData2: nil
+        mrzString: "",
+        mrzStringWithFinalDigit: "",
+        optionalData2: nil,
+        finalCheckDigit: nil
     )
 
     static let secondParsedResult = ParsedResult(
         format: .td2,
         documentType: .id,
+        documentTypeAdditional: nil,
         countryCode: "",
         surnames: "",
         givenNames: "",
         documentNumber: nil,
+        documentNumberCheckDigit: nil,
         nationalityCountryCode: "",
         birthdate: nil,
+        birthdateCheckDigit: nil,
         sex: .male,
         expiryDate: nil,
+        expiryDateCheckDigit: nil,
         optionalData: nil,
-        optionalData2: nil
+        mrzString: "",
+        mrzStringWithFinalDigit: "",
+        optionalData2: nil,
+        finalCheckDigit: nil
     )
 
     static let textRecognizerResults: [TextRecognizerResult] = [.init(results: [], boundingRect: .zero)]

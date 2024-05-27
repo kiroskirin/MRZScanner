@@ -5,14 +5,14 @@
 //  Created by Roman Mazeev on 12.07.2021.
 //
 
-typealias ValidatedResults = [ValidatedResult]
-struct ValidatedResult {
+public typealias ValidatedResults = [ValidatedResult]
+public struct ValidatedResult {
     /// MRZLine
-    let result: String
+    public let result: String
     /// MRZLine boundingRect index
-    let index: Int
+    public let index: Int
 }
 
-protocol Validator {
+public protocol Validator {
     func getValidatedResults(from possibleLines: [[String]]) -> ValidatedResults
 }

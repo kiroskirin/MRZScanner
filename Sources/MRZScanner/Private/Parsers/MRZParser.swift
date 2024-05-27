@@ -10,8 +10,8 @@ import MRZParser
 // TODO: Remove this line when `ParsedResult` struct will be implemented
 public typealias ParsedResult = MRZResult
 
-struct MRZLineParser: Parser {
-    func parse(lines: [String]) -> ParsedResult? {
+public struct MRZLineParser: Parser {
+    public func parse(lines: [String]) -> ParsedResult? {
         MRZParser(isOCRCorrectionEnabled: true).parse(mrzLines: lines)
     }
 }

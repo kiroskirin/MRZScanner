@@ -7,6 +7,6 @@
 
 // TODO: Add `ParsedResult` to use not only MRZ
 
-protocol Parser {
+public protocol Parser {
     func parse(lines: [String]) -> ParsedResult?
 }
